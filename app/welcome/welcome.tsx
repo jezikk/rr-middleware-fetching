@@ -10,7 +10,7 @@ export function Welcome() {
   async function callFetchData() {
     const res = await fetch(href("/api/data"), { method: "POST", body: null });
     const data = await res.json();
-    console.log("From fetch data:", data);
+    console.log("From fetch:", data);
   }
 
   async function callFetchResponse() {
@@ -19,7 +19,7 @@ export function Welcome() {
       body: null,
     });
     const data = await res.json();
-    console.log("From fetch json:", data);
+    console.log("From fetch:", data);
   }
 
   useEffect(() => {
